@@ -1,3 +1,3 @@
 # Restaurant site with React Js
 
-## Live Link [Click here](https://github.com/facebook/create-react-app).
+## Live Link [Click here]().
