@@ -1,0 +1,18 @@
+.card-item{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-gap: 2px;
+    /* width: 250px; */
+    align-items: center;
+}
+
+/* .card-item:hover{ */
+  
+    /* width: 200px; */
+    /* transform: translateY(10px); */
+    /* transition: 0.2s all; */
+    /* opacity: 0; */
+
+    /* transform: scale(1.05); */
+
+/* } */

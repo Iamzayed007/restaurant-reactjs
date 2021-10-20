@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Healthy Meal Plan",
+        "description": "How we dream about our future",
+        "img": "./image/Image/person.png"
+    },
+    {
+        "id": 2,
+        "title": "Fried Chicken Bento",
+        "description": "How we dream about our future",
+        "img": "./image/Image/chef.png"
+    },
+    {
+        "id": 3,
+        "title": "Tarragon Rubbed Salmon",
+        "description": "How we dream about our future",
+        "img": "./image/Image/person1.png"
+    }
+]
