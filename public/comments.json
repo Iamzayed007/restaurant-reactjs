@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "title": "Healthy Meal Plan",
+        "title": "Fast Delivery",
         "description": "How we dream about our future",
         "img": "./image/Image/person.png"
     },
     {
         "id": 2,
-        "title": "Fried Chicken Bento",
+        "title": "A Good Auto Responder",
         "description": "How we dream about our future",
         "img": "./image/Image/chef.png"
     },
     {
         "id": 3,
-        "title": "Tarragon Rubbed Salmon",
+        "title": "Home Delivery",
         "description": "How we dream about our future",
         "img": "./image/Image/person1.png"
     }

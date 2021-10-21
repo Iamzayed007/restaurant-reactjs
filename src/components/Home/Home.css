@@ -64,3 +64,65 @@
     margin-top: 5px;
     
 } */
+
+@media screen and (max-width:640px) {
+  .banner-item{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    
+   
+}  
+.banner-item h1{
+    position: relative;
+    left: 30%;
+    font-size:20px;
+}
+.search input{
+    width: 15rem;
+    /* margin-right: 5px; */
+    position: relative;
+    left: 35%;
+    /* z-index: -1; */
+    /* font-size: large; */
+}
+.search button{
+    position: relative;
+    top: 30%;
+    left: 35%;
+    
+
+    
+}
+}
+
+@media (min-width: 30em) and (max-width: 80em) {
+
+    .banner-item{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        
+       
+    }  
+    .banner-item h1{
+        position: relative;
+        left: 60%;
+        font-size:25px;
+    }
+    .search input{
+        width: 15rem;
+        position: relative;
+        left: 60%;
+        
+    }
+    .search button{
+        position: relative;
+        top: 30%;
+        left: 65%;
+        
+    
+        
+    }
+    
+}

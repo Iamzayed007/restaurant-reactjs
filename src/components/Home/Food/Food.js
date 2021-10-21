@@ -9,7 +9,7 @@ const Food = (props) => {
     return (
         <div className="container" >
             <Col>
-                <Card className="card-item">
+                <Card className="card-item w-100">
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>

@@ -15,8 +15,8 @@ const Foods = () => {
 
     }, []);
     return (
-        <div className="text-center">
-            <div className="card-item">
+        <div className="text-center  d-flex justify-content-center">
+            <div className="cards-item w-75 ">
                 <Row xs={1} md={2} lg={3} className="g-4">
                     {
                         foods.map(food => <Food food={food} />)
