@@ -1,10 +1,10 @@
 .bg-img img{
     position: absolute;
-    margin-top: 3%;
+    /* margin-top: 3%; */
     width: 100%;
-    height: 100%;
+    height: 80%;
     z-index: -2;
 }
-.bg-img  {
+/* .bg-img  {
     height: 500px;
-}
+} */

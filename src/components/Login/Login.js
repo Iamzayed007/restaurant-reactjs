@@ -76,38 +76,38 @@ const Login = () => {
     }
 
     return (
-        <div className="">
-            <div className=" h-full  d-flex justify-content-center bg-img">
-                <img src={background} alt="" />
-                <div className=" w-50 mt-5 form-card px-4 py-5 col-sm-12">
 
-                    <h1 className="mb-4"> {isRegister ? 'Login' : 'Register'}</h1>
-                    <form action="" className=" w-75" >
-                        <input onBlur={handleEmail} className="form-control mb-3" type="email" name="email" placeholder="Email" />
-                        <input onBlur={handlePassword} className="form-control mb-3" type="password" name="email" id="password" ref={passwordRef} placeholder="Password" />
-                        <button className="btn btn-danger mb-3"
-                            onClick={handleButton}
-                        >{isRegister ? 'Login' : 'Register'}</button>
-                    </form>
-                    {
-                        isRegister ? <>
+        <div className=" h-100 p-2  d-flex justify-content-center bg-img">
+            <img src={background} alt="" />
+            <div className=" w-50 mt-5 form-card px-4 py-5 col-sm-12">
 
-                            <button onClick={handleGoogleSingIn}
-                                className="btn btn-warning mb-5"
-                            >Google Signin</button>
+                <h1 className="mb-4"> {isRegister ? 'Login' : 'Register'}</h1>
+                <form action="" className=" w-75" >
+                    <input onBlur={handleEmail} className="form-control mb-3" type="email" name="email" placeholder="Email" />
+                    <input onBlur={handlePassword} className="form-control mb-3" type="password" name="email" id="password" ref={passwordRef} placeholder="Password" />
+                    <button className="btn btn-danger mb-3"
+                        onClick={handleButton}
+                    >{isRegister ? 'Login' : 'Register'}</button>
+                </form>
+                {
+                    isRegister ? <>
 
-                            <h5>Create New account ? <Link to="/register" onClick={toggleRegistration}
+                        <button onClick={handleGoogleSingIn}
+                            className="btn btn-warning mb-5"
+                        >Google Signin</button>
 
-                            >Register Now</Link> </h5>
-                        </> : <>
-                            <h5>Already Register ? <Link to="/login" onClick={toggleLogIn}
+                        <h5>Create New account ? <Link to="/register" onClick={toggleRegistration}
 
-                            >Login Now</Link></h5>
-                        </>
-                    }
-                </div>
+                        >Register Now</Link> </h5>
+                    </> : <>
+                        <h5>Already Register ? <Link to="/login" onClick={toggleLogIn}
+
+                        >Login Now</Link></h5>
+                    </>
+                }
             </div>
         </div>
+
     );
 };
 
