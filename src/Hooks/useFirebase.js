@@ -1,9 +1,11 @@
 import {
     GoogleAuthProvider, getAuth, signInWithPopup,
     signOut,
-    createUserWithEmailAndPassword
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword
 } from "firebase/auth";
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { useHistory } from 'react-router';
 import initializeAuth from '../firebase/firebase.initialize';
 
 initializeAuth();
@@ -16,23 +18,51 @@ const useFirebase = () => {
     const [isLogIn, setIsLogIn] = useState(false)
     const [isRegister, setIsRegister] = useState(true)
 
+    const history = useHistory()
     const auth = getAuth();
+
+    //Get Data 
+    // const emailRef = useRef()
+    // const passwordRef = useRef()
 
     //Email Register
     const registerNewUser = (email, password) => {
 
-        createUserWithEmailAndPassword(auth, email, password)
+        // setEmail(emailRef.current.value)
+        // setPassword(passwordRef.current.value)
+        return createUserWithEmailAndPassword(auth, email, password)
             .then((res) => {
                 // Signed in 
                 const user = res.user;
                 setUser(user)
                 setIsLogIn(true)
+                history.push('/')
+                console.log(user)
                 // ...
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 // ..
+            });
+    }
+
+    //Email Sign In
+
+    const emailLogin = (email, password) => {
+        return signInWithEmailAndPassword(auth, email, password)
+            .then((res) => {
+                // Signed in 
+                const user = res.user;
+                setUser(user)
+                setIsLogIn(true)
+                history.push('/')
+                console.log(user)
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
             });
     }
 
@@ -62,11 +92,23 @@ const useFirebase = () => {
 
     return {
         user,
+        email,
+        password,
         isLogIn,
         isRegister,
+
+        setEmail,
+        setPassword,
+        setIsRegister,
+        setUser,
+        setIsLogIn,
+
+
+        registerNewUser,
+        emailLogin,
         singInWithGoogle,
-        logOut,
-        setUser
+        logOut
+
     }
 }
 export default useFirebase;

@@ -19,7 +19,7 @@ const Breakfast = () => {
                 <div className="card-item">
                     <Row xs={1} md={2} lg={3} className="g-4">
                         {
-                            foods.map(food => <SingleBreakfast food={food} />)
+                            foods.map(food => <SingleBreakfast key={food.id} food={food} />)
                         }
                     </Row>
 

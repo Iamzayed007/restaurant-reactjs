@@ -1,14 +1,37 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import background from '../../image/bannerbackground.png'
 import './Login.css'
 const Login = () => {
-    const { singInWithGoogle, isRegister } = useAuth();
+    const { singInWithGoogle, isRegister, emailRef, passwordRef, setIsRegister, registerNewUser,
+        setEmail,
+        setPassword,
+        emailLogin,
+        email,
+        password
+    } = useAuth();
 
 
     const location = useLocation()
     const history = useHistory()
+
+    // //Get Data 
+    // const emailRef = useRef()
+    // const passwordRef = useRef()
+
+    const handleEmail = (e) => {
+        const email = e.target.value
+        console.log(email)
+        setEmail(email)
+    }
+    const handlePassword = (e) => {
+        const password = e.target.value
+        console.log(password)
+        setPassword(password)
+    }
+
 
     const handleGoogleSingIn = () => {
         singInWithGoogle()
@@ -20,6 +43,38 @@ const Login = () => {
 
     }
 
+    const toggleRegistration = () => {
+        // history.push('/login')
+        setIsRegister(false)
+    }
+    const toggleLogIn = () => {
+        // history.push('/login')
+        setIsRegister(true)
+    }
+
+    const handleButton = (e) => {
+        e.preventDefault()
+
+        // const email = emailRef.current.value
+        // const password = passwordRef.current.value
+
+        if (isRegister) {
+            emailLogin(email, password)
+                .then(() => {
+                    history.push('/')
+                    // e.target.value.reset()
+                })
+        }
+        else {
+            registerNewUser(email, password)
+                .then(() => {
+                    history.push('/')
+                    // e.target.value.reset()
+                })
+        }
+
+    }
+
     return (
         <div className="">
             <div className=" h-full  d-flex justify-content-center bg-img">
@@ -28,9 +83,11 @@ const Login = () => {
 
                     <h1 className="mb-4"> {isRegister ? 'Login' : 'Register'}</h1>
                     <form action="" className=" w-75" >
-                        <input className="form-control mb-3" type="email" name="email" id="email" placeholder="Email" />
-                        <input className="form-control mb-3" type="password" name="email" id="password" placeholder="Password" />
-                        <button className="btn btn-danger mb-3">{isRegister ? 'Login' : 'Register'}</button>
+                        <input onBlur={handleEmail} className="form-control mb-3" type="email" name="email" placeholder="Email" />
+                        <input onBlur={handlePassword} className="form-control mb-3" type="password" name="email" id="password" ref={passwordRef} placeholder="Password" />
+                        <button className="btn btn-danger mb-3"
+                            onClick={handleButton}
+                        >{isRegister ? 'Login' : 'Register'}</button>
                     </form>
                     {
                         isRegister ? <>
@@ -38,8 +95,15 @@ const Login = () => {
                             <button onClick={handleGoogleSingIn}
                                 className="btn btn-warning mb-5"
                             >Google Signin</button>
-                            <h5>Create New account ?  </h5>
-                        </> : ''
+
+                            <h5>Create New account ? <Link to="/register" onClick={toggleRegistration}
+
+                            >Register Now</Link> </h5>
+                        </> : <>
+                            <h5>Already Register ? <Link to="/login" onClick={toggleLogIn}
+
+                            >Login Now</Link></h5>
+                        </>
                     }
                 </div>
             </div>

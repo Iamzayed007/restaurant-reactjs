@@ -23,6 +23,9 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
+            <Route path="/register">
+              <Login />
+            </Route>
             <Route path="/breakfast">
               <Breakfast />
             </Route>
