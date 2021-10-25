@@ -77,9 +77,9 @@ const Login = () => {
 
     return (
 
-        <div className=" h-100 p-2  d-flex justify-content-center bg-img">
+        <div className=" h-100 p-2 py-4 d-flex justify-content-center bg-img">
             <img src={background} alt="" />
-            <div className=" w-50 mt-5 form-card px-4 py-5 col-sm-12">
+            <div className="h-100 w-50 mt-5 form-card px-4 py-5 col-sm-12">
 
                 <h1 className="mb-4"> {isRegister ? 'Login' : 'Register'}</h1>
                 <form action="" className=" w-75" >
@@ -106,6 +106,7 @@ const Login = () => {
                     </>
                 }
             </div>
+            <div className="h-100"></div>
         </div>
 
     );

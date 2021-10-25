@@ -3,8 +3,8 @@ import background from '../../image/bannerbackground.png'
 
 const Banner = () => {
     return (
-        <div claName="container">
-            <div className="row">
+        <div claName="container w-100">
+            <div className="row w-100">
                 <div className="col">
                     <div className="banner">
                         <img src={background} alt="img" />

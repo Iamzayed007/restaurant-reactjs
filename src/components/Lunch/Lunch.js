@@ -15,8 +15,8 @@ const Lunch = () => {
         <>
             <Banner />
             <Menu />
-            <div className="text-center">
-                <div className="card-item">
+            <div className="text-center d-flex justify-content-center">
+                <div className="card-item w-75">
                     <Row xs={1} md={2} lg={3} className="g-4">
                         {
                             lunchs.map(lunch => <SingleLunch key={lunch.id} lunch={lunch} />)
@@ -37,7 +37,7 @@ const SingleLunch = (props) => {
     return (
         <div >
             <Col>
-                <Card className="card-item">
+                <Card className="card-item w-100">
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
