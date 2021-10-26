@@ -1,4 +1,7 @@
-
+.banner{
+    height: 100%;
+    width: 100%;
+}
 .banner img{
     /* background-image: url('../../image/bannerbackground.png'); */
     height: 600px;
@@ -10,9 +13,9 @@
 }
 .banner-item{
     position: absolute;
-    top: 200px;
-    left: 350px;
-    font-size:30px;
+    top: 30%;
+    left: 30%;
+    /* font-size:1%; */
    
 }
 .search{
@@ -75,21 +78,21 @@
 }  
 .banner-item h1{
     position: relative;
-    left: 30%;
+    left: 10%;
     font-size:20px;
 }
 .search input{
     width: 15rem;
     /* margin-right: 5px; */
     position: relative;
-    left: 35%;
+    left: 0%;
     /* z-index: -1; */
     /* font-size: large; */
 }
 .search button{
     position: relative;
     top: 30%;
-    left: 35%;
+    left: 1%;
     
 
     
@@ -101,25 +104,25 @@
     .banner-item{
         position: absolute;
         top: 30%;
-        left: 10%;
+        left: 30%;
         
        
     }  
     .banner-item h1{
         position: relative;
-        left: 60%;
+        left: 0%;
         font-size:25px;
     }
     .search input{
         width: 15rem;
         position: relative;
-        left: 60%;
+        left: 0%;
         
     }
     .search button{
         position: relative;
         top: 30%;
-        left: 65%;
+        left: 0%;
         
     
         

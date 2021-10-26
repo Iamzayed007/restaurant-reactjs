@@ -1,9 +1,10 @@
+console.log(process.env)
 const firebaseConfig = {
-    apiKey: "AIzaSyDsY9XbBXGATrb5OV-4VoyNN49gkLVyuds",
-    authDomain: "restaurants-61203.firebaseapp.com",
-    projectId: "restaurants-61203",
-    storageBucket: "restaurants-61203.appspot.com",
-    messagingSenderId: "36176757007",
-    appId: "1:36176757007:web:668081fd72b07fb664be7a"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 export default firebaseConfig

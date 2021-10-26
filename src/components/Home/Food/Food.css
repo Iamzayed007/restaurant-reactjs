@@ -5,14 +5,15 @@
     /* width: 250px; */
     align-items: center;
 }
-
-/* .card-item:hover{ */
+/* 
+.card-item:hover{ 
   
-    /* width: 200px; */
-    /* transform: translateY(10px); */
-    /* transition: 0.2s all; */
-    /* opacity: 0; */
+    width: 200px;
+    transform: translateY(10px);
+    transition: 0.2s all;
+    opacity: 0;
+    z-index:2;
 
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
 
-/* } */
+} */
