@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
+import Services from '../Home/Services/Services';
 import Menu from '../Menu/Menu';
 
 const Lunch = () => {
     const [lunchs, setlunchs] = useState([]);
+
+    useEffect(() => {
+        document.title = 'Lunch'
+    }, [])
+
     useEffect(() => {
         fetch('./lunch.json')
             .then(res => res.json())
@@ -25,6 +31,7 @@ const Lunch = () => {
 
                 </div>
             </div>
+            <Services />
         </>
     );
 };

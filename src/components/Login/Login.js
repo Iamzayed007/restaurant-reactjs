@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
@@ -20,6 +20,16 @@ const Login = () => {
     // //Get Data 
     // const emailRef = useRef()
     // const passwordRef = useRef()
+
+    useEffect(() => {
+        if (isRegister) {
+
+            document.title = 'Login'
+        }
+        else {
+            document.title = 'Register'
+        }
+    }, [isRegister])
 
     const handleEmail = (e) => {
         const email = e.target.value

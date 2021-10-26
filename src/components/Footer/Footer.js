@@ -10,9 +10,9 @@ const Footer = () => {
                     width="200px"
                     src={logo} alt="logo" />
             </div>
-            <div class="container w-75">
-                <div class="row">
-                    <div class="col w-50">
+            <div className="container w-75">
+                <div className="row">
+                    <div className="col w-50">
                         <ul className="">
                             <ul>About Online Food</ul>
                             <ul>Read our blog</ul>
@@ -20,7 +20,7 @@ const Footer = () => {
                             <ul>Add your restaurant</ul>
                         </ul>
                     </div>
-                    <div class="col w-50">
+                    <div className="col w-50">
                         <ul className="">
                             <ul>Get Help</ul>
                             <ul>Read FAQs</ul>
