@@ -32,6 +32,7 @@ const Header = () => {
                     <Nav className="me-start">
                         <Nav.Link as={Link} to="/cart">Cart</Nav.Link>
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/order">My Order</Nav.Link>
                         <button onClick={handleLogIn} className="btn btn-danger text-white">{isLogIn ? 'Sign Out' : 'Login'}</button>
                         {/* <button type="button" className="btn btn-danger">Sign up</button> */}
                     </Nav>

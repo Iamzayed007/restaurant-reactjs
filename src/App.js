@@ -11,6 +11,10 @@ import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
 import PlaceHolder from './components/PlaceHolder/PlaceHolder';
 import FoodDetails from './components/FoodDetails/FoodDetails';
+import UserCart from './components/UserCart/UserCart';
+import NotFound from './components/NotFound/NotFound';
+import MyOrder from './components/MyOrder/MyOrder';
+import DFooter from './components/DFooter/DFooter';
 
 function App() {
   return (
@@ -19,6 +23,7 @@ function App() {
         <BrowserRouter>
 
           <Header />
+          <UserCart />
           <Switch>
             <Route exact path="/">
               <Home />
@@ -41,15 +46,22 @@ function App() {
             <Route path="/cart">
               <Cart />
             </Route>
-            <Route path="/placeHolder">
+            <Route path="/order">
+              <MyOrder />
+            </Route>
+            <Route path="/placeHolder/:aId">
               <PlaceHolder />
             </Route>
             <Route path="/details/:Id">
               <FoodDetails />
             </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
 
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
+          <DFooter />
         </BrowserRouter>
       </AuthProvider>
     </div >

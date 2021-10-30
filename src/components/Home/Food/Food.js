@@ -6,7 +6,7 @@ import './Food.css'
 // "img": "https://i.ibb.co/Q6M6qBt/breakfast1.png"
 
 const Food = (props) => {
-    const { id, img, name, price, description } = props.food;
+    const { _id, img, name, price, description } = props.food;
     console.log(props.food)
     return (
         <div className="container" >
@@ -22,7 +22,7 @@ const Food = (props) => {
                             {description}
                         </Card.Text>
                         <Card.Text>
-                            <Link to={`/details/${id}`}> Details</Link>
+                            <Link to={`/placeHolder/${_id}`}> Details</Link>
                         </Card.Text>
                     </Card.Body>
                 </Card>

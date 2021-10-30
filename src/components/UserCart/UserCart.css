@@ -1,0 +1,20 @@
+.user-cart{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    left: 77%;
+    /* width: 300px; */
+}
+.user-details{
+    position: relative;
+    top: 50px;
+    width: 350px;
+    background-color: rgb(155, 134, 134);
+    z-index: 2;
+}
+.img-section img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
