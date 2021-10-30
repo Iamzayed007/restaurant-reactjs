@@ -8,6 +8,9 @@ import Breakfast from './components/Breakfast/Breakfast';
 import Lunch from './components/Lunch/Lunch';
 import Dinner from './components/Dinner/Dinner';
 import Footer from './components/Footer/Footer';
+import Cart from './components/Cart/Cart';
+import PlaceHolder from './components/PlaceHolder/PlaceHolder';
+import FoodDetails from './components/FoodDetails/FoodDetails';
 
 function App() {
   return (
@@ -34,6 +37,15 @@ function App() {
             </Route>
             <Route path="/dinner">
               <Dinner />
+            </Route>
+            <Route path="/cart">
+              <Cart />
+            </Route>
+            <Route path="/placeHolder">
+              <PlaceHolder />
+            </Route>
+            <Route path="/details/:Id">
+              <FoodDetails />
             </Route>
 
           </Switch>

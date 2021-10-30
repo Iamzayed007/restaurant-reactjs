@@ -1,10 +1,12 @@
 import React from 'react';
 import { Col, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 import './Food.css'
 // "img": "https://i.ibb.co/Q6M6qBt/breakfast1.png"
 
 const Food = (props) => {
-    const { img, name, price, description } = props.food;
+    const { id, img, name, price, description } = props.food;
     console.log(props.food)
     return (
         <div className="container" >
@@ -18,6 +20,9 @@ const Food = (props) => {
                         </Card.Text>
                         <Card.Text>
                             {description}
+                        </Card.Text>
+                        <Card.Text>
+                            <Link to={`/details/${id}`}> Details</Link>
                         </Card.Text>
                     </Card.Body>
                 </Card>

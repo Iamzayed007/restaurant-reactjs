@@ -11,7 +11,10 @@ const Foods = () => {
     useEffect(() => {
         fetch('./db.json')
             .then(res => res.json())
-            .then(data => setFoods(data))
+            .then(data => {
+                // console.log(data[0].breakfast)
+                setFoods(data)
+            })
 
     }, []);
     return (

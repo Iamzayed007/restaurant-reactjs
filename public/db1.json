@@ -1,26 +1,140 @@
 [
     {
-        "id": 1,
-        "img": "https://i.ibb.co/Q6M6qBt/breakfast1.png"
+        "breakfast": [
+            {
+                "id": 1,
+                "name": "Healthy Meal Plan",
+                "price": "23.99",
+                "description": "How we dream about our future",
+                "img": "./image/Breakfast/breakfast1.png"
+            },
+            {
+                "id": 2,
+                "name": "Fried Chicken Bento",
+                "price": "9.99",
+                "description": "How we dream about our future",
+                "img": "./image/Breakfast/breakfast2.png"
+            },
+            {
+                "id": 3,
+                "name": "Tarragon Rubbed Salmon",
+                "price": "6.99",
+                "description": "How we dream about our future",
+                "img": "./image/Breakfast/breakfast3.png"
+            },
+            {
+                "id": 4,
+                "name": "Indian Lunch",
+                "price": "8.99",
+                "description": "How we dream about our future",
+                "img": "./image/Breakfast/breakfast4.png"
+            },
+            {
+                "id": 5,
+                "name": "Beef Steak",
+                "price": "15.99",
+                "description": "How we dream about our future",
+                "img": "./image/Breakfast/breakfast5.png"
+            },
+            {
+                "id": 6,
+                "name": "Honey Soy Glazed Salmon with Peppers",
+                "price": "7.99",
+                "description": "How we dream about our future",
+                "img": "./image/Breakfast/breakfast6.png"
+            }
+        ]
     },
     {
-        "id": 2,
-        "img": "https://i.ibb.co/Ks4tvn7/breakfast2.png"
+        "luch": [
+            {
+                "id": 1,
+                "name": "Healthy Meal Plan",
+                "price": "23.99",
+                "description": "How we dream about our future",
+                "img": "./image/lunch/lunch1.png"
+            },
+            {
+                "id": 2,
+                "name": "Fried Chicken Bento",
+                "price": "9.99",
+                "description": "How we dream about our future",
+                "img": "./image/lunch/lunch2.png"
+            },
+            {
+                "id": 3,
+                "name": "Tarragon Rubbed Salmon",
+                "price": "6.99",
+                "description": "How we dream about our future",
+                "img": "./image/lunch/lunch3.png"
+            },
+            {
+                "id": 4,
+                "name": "Indian Lunch",
+                "price": "8.99",
+                "description": "How we dream about our future",
+                "img": "./image/lunch/lunch4.png"
+            },
+            {
+                "id": 5,
+                "name": "Beef Steak",
+                "price": "15.99",
+                "description": "How we dream about our future",
+                "img": "./image/lunch/lunch5.png"
+            },
+            {
+                "id": 6,
+                "name": "Honey Soy Glazed Salmon with Peppers",
+                "price": "7.99",
+                "description": "How we dream about our future",
+                "img": "./image/lunch/lunch6.png"
+            }
+        ]
     },
     {
-        "id": 3,
-        "img": "https://i.ibb.co/PDfZnLR/breakfast3.png"
-    },
-    {
-        "id": 4,
-        "img": "https://i.ibb.co/ZhgQFvF/breakfast4.png"
-    },
-    {
-        "id": 5,
-        "img": "https://i.ibb.co/fNJ9SVv/breakfast5.png"
-    },
-    {
-        "id": 6,
-        "img": "https://i.ibb.co/L99hBZt/breakfast6.png"
+        "dinner": [
+            {
+                "id": 1,
+                "name": "Healthy Meal Plan",
+                "price": "23.99",
+                "description": "How we dream about our future",
+                "img": "./image/Dinner/dinner1.png"
+            },
+            {
+                "id": 2,
+                "name": "Fried Chicken Bento",
+                "price": "9.99",
+                "description": "How we dream about our future",
+                "img": "./image/Dinner/dinner2.png"
+            },
+            {
+                "id": 3,
+                "name": "Tarragon Rubbed Salmon",
+                "price": "6.99",
+                "description": "How we dream about our future",
+                "img": "./image/Dinner/dinner3.png"
+            },
+            {
+                "id": 4,
+                "name": "Indian Lunch",
+                "price": "8.99",
+                "description": "How we dream about our future",
+                "img": "./image/Dinner/dinner4.png"
+            },
+            {
+                "id": 5,
+                "name": "Beef Steak",
+                "price": "15.99",
+                "description": "How we dream about our future",
+                "img": "./image/Dinner/dinner5.png"
+            },
+            {
+                "id": 6,
+                "name": "Honey Soy Glazed Salmon with Peppers",
+                "price": "7.99",
+                "description": "How we dream about our future",
+                "img": "./image/Dinner/dinner6.png"
+            }
+        ]
     }
 ]

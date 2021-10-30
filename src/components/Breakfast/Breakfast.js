@@ -12,7 +12,7 @@ const Breakfast = () => {
     }, [])
 
     useEffect(() => {
-        fetch('./db.json')
+        fetch('https://powerful-retreat-03922.herokuapp.com/breakfast')
             .then(res => res.json())
             .then(data => setFoods(data))
 

@@ -30,6 +30,7 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand as={Link} to="/"><img height="50px" src={logo} alt="img" /></Navbar.Brand>
                     <Nav className="me-start">
+                        <Nav.Link as={Link} to="/cart">Cart</Nav.Link>
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
                         <button onClick={handleLogIn} className="btn btn-danger text-white">{isLogIn ? 'Sign Out' : 'Login'}</button>
                         {/* <button type="button" className="btn btn-danger">Sign up</button> */}
