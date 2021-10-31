@@ -16,7 +16,7 @@ const Login = () => {
 
     const location = useLocation()
     const history = useHistory()
-
+    const url = location.state || '/'
     // //Get Data 
     // const emailRef = useRef()
     // const passwordRef = useRef()
@@ -47,7 +47,7 @@ const Login = () => {
         singInWithGoogle()
             .then(() => {
 
-                history.push('/')
+                history.push(url)
             })
 
 

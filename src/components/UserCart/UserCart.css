@@ -3,6 +3,7 @@
     display: flex;
     justify-content: end;
     left: 77%;
+    z-index: 2;
     /* width: 300px; */
 }
 .user-details{

@@ -9,7 +9,8 @@ const Foods = () => {
     // console.log(foods)
     const [foods, setFoods] = useState([]);
     useEffect(() => {
-        fetch('./db.json')
+        // fetch('./db.json')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => {
                 // console.log(data[0].breakfast)
